@@ -1,3 +1,16 @@
 #container {
     display: flex;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+}
+
+.square {
+    border: solid 1px black;
+    flex: 1;
 }
