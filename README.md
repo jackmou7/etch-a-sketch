@@ -1,0 +1,1 @@
+This is an "etch-a-sketch" made using HTML, CSS, and JavaScript as a project in the Odin Project.
