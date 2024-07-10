@@ -34,15 +34,26 @@ function makeGrid(size = 16) {
 function applyEffect() {
     const squares = document.querySelectorAll(".square");
     squares.forEach(function(i) {
+        let x = 0;
     i.addEventListener('mouseover', () => {
         i.style.backgroundColor = "lightgreen";
+        x = opacityCount(x);
+        i.style.opacity = x;
     });
     i.addEventListener('mouseout', () => {
         i.style.backgroundColor = "white";
+        i.style.opacity = 1;
     })
 });
 }
 
+function opacityCount(x) {
+    if(x == 1) {
+        return 1;
+    } else {
+        return x + 0.1;
+    }
+}
 
 makeGrid();
 applyEffect();
